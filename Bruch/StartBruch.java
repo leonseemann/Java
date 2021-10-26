@@ -1,4 +1,5 @@
 package Bruch;
+
 class StartBruch {
     public static void main(String[] arg) {
         Bruch bruch = new Bruch(3, 5);
