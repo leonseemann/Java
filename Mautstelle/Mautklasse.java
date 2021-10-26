@@ -13,7 +13,7 @@ class Mautklasse {
         this(a, 0);
     }
 
-    public Mautklasse(int a, int g) {
+    public Mautklasse(int a, float g) {
         Anzahl = a;
         Geldmenge = g;
     }
