@@ -1,3 +1,4 @@
+package Bruch;
 
 class Bruch {
     private int zaehler;
@@ -30,7 +31,7 @@ class Bruch {
     }
 
     public Bruch addition(Bruch b) {
-        Bruch ausgabeB = new Bruch(this.zaehler * b.nenner +  b.zaehler * this.nenner, this.nenner * b.nenner);
+        Bruch ausgabeB = new Bruch(this.zaehler * b.nenner + b.zaehler * this.nenner, this.nenner * b.nenner);
 
         return ausgabeB;
     }
