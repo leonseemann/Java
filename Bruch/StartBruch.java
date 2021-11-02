@@ -2,12 +2,12 @@ package Bruch;
 
 class StartBruch {
     public static void main(String[] arg) {
-        Bruch bruch = new Bruch();
-        Bruch brech = new Bruch();
-        Bruch brich = new Bruch();
+        Bruch a = new Bruch(1, 3);
+        Bruch b = new Bruch(1, 2);
+        Bruch c = new Bruch();
 
-        brich = bruch.addition(brech);
-        brich.ausgabeBruch();
-        System.out.println(brich.ausgabeDezimal());
+        c = a.addition(b);
+        c.ausgabeBruch();
+        System.out.println(c.ausgabeDezimal());
     }
 }
