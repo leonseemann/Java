@@ -14,6 +14,6 @@ public class Lehrer	extends Person {
     }
     
     public void print() {
-    	System.out.printf("Vorname: %s%nNachname: %s%nIch bin Lehrer und unterrichte die F�cher %s und %s", super.getVorname(), super.getName(), fach1, fach2);
+    	System.out.printf("Vorname: %s%nNachname: %s%nIch bin Lehrer und unterrichte die Faecher %s und %s", super.getVorname(), super.getName(), fach1, fach2);
     }
 }
