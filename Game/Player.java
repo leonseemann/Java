@@ -12,7 +12,7 @@ public class Player {
         this(points, "Leer");
     }
 
-    public Player(String name){
+    public Player(String name) {
         this(10000, name);
     }
 
@@ -21,27 +21,27 @@ public class Player {
         this.name = name;
     }
 
-    public void setPoints(int points){
+    public void setPoints(int points) {
         this.points = points;
     }
 
-    public int getPoints(){
+    public int getPoints() {
         return this.points;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
-    public void reuturnPoints(){
+    public void reuturnPoints() {
         System.out.printf("Points: %s", points);
     }
 
-    public void returnName(){
+    public void returnName() {
         System.out.printf("Name: %s", name);
     }
 }

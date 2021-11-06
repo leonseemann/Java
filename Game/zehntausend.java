@@ -28,4 +28,8 @@ public class zehntausend {
     public static void dreimalsechs(Player p) {
         p.setPoints(p.getPoints() - 600);
     }
+
+    public static void strasse(Player p){
+        p.setPoints(p.getPoints() - 2000);
+    }
 }
