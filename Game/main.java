@@ -25,12 +25,17 @@ public class main extends zehntausend {
         }
 
         while (true) {
-
-            System.out.println("Was hast du gewürfelt?");
-            System.out.printf(
-                    "1. Eine 5. %n2. Eine 1. %n3. 3 mal eine 2 %n4. 3 mal eine 3 %n5. 3 mal eine 4 %n6. 3 mal eine 5%n7. 3 mal eine 6 %n8. Eine Straße%n");
+            System.out.printf("%s, was hast du gewürfelt?%n", player[pick].getName());
+            System.out.printf("0. Nächster Spieler%n1. Eine 5. %n2. Eine 1. %n3. 3 mal eine 2 %n4. 3 mal eine 3 %n5. 3 mal eine 4 %n6. 3 mal eine 5%n7. 3 mal eine 6 %n8. Eine Straße%n9. Uebersicht%n");
             int i = scanner.nextInt();
             switch (i) {
+            case 0:
+                if (pick == anzahl_spieler - 1) {
+                    pick = 0;
+                } else {
+                    pick++;
+                }
+                break;
             case 1:
                 fuenf(player[pick]);
                 break;
@@ -55,13 +60,16 @@ public class main extends zehntausend {
             case 8:
                 strasse(player[pick]);
                 break;
-
+            case 9:
+                for (int z = 0; z < anzahl_spieler; z++) {
+                    System.out.printf("Spieler:  %s%nPunkte: %s%n%n", player[z].getName(), player[z].getPoints());
+                }
+                break;
             default:
                 System.out.printf("%s ist eine ungueltige Eingabe.", i);
-                return;
+                break;
             }
             System.out.printf("Spieler:  %s%nPunkte: %s%n%n", player[pick].getName(), player[pick].getPoints());
         }
-
     }
 }
