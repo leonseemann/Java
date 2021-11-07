@@ -32,4 +32,8 @@ public class zehntausend {
     public static void strasse(Player p){
         p.setPoints(p.getPoints() - 2000);
     }
+
+    public static void costom(Player p, int points){
+        p.setPoints(p.getPoints() - points);
+    }
 }
