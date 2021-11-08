@@ -32,7 +32,7 @@ public class main extends zehntausend {
         // player[i].getPoints());
         // }
 
-        while (true) {
+        loop:  while (true) {
             for (int z = 0; z < anzahl_spieler; z++) {
                 System.out.printf("Spieler:  %s%nPunkte: %s%n%n", player[z].getName(), player[z].getPoints());
             }
@@ -103,6 +103,7 @@ public class main extends zehntausend {
                 break;
             case 10:
                 costom(player[pick], -temp);
+                temp = 0;
                 break;
             default:
                 System.err.printf("%s ist eine ungueltige Eingabe.%n", i);
@@ -111,6 +112,11 @@ public class main extends zehntausend {
             clearScreen();
             // System.out.printf("Spieler: %s%nPunkte: %s%n%n", player[pick].getName(),
             // player[pick].getPoints());
+            for (int j = 0; j < anzahl_spieler; j++) {
+                if (player[j].getPoints() == 0) {
+                    break loop;
+                }
+            }
         }
     }
 }
