@@ -19,7 +19,13 @@ public class Arbeiter extends Mitarbeiter {
         this.schichtzulage = scanner.nextDouble();
         System.out.println("Anzahlstunden:");
         this.anzahlstunden = scanner.nextInt();
+    }
 
+    public Arbeiter(String name, int persnr, double stundenlohn, double schichtzulage, int anzahlstunden) {
+        super(name, persnr);
+        this.stundenlohn = stundenlohn;
+        this.schichtzulage = schichtzulage;
+        this.anzahlstunden = anzahlstunden;
     }
 
     public void setStundenlohn(double stundenlohn) {

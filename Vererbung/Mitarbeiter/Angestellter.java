@@ -18,6 +18,12 @@ public class Angestellter extends Mitarbeiter {
         this.ortzuschlag = scanner.nextDouble();
     }
 
+    public Angestellter(String name, int persnr, double grundgehalt, double ortzuschlag) {
+        super(name, persnr);
+        this.grundgehalt = grundgehalt;
+        this.ortzuschlag = ortzuschlag;
+    }
+
     public double monatsBrutto() {
         return this.grundgehalt + this.ortzuschlag;
     }
