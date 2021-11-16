@@ -58,6 +58,6 @@ public class Arbeiter extends Mitarbeiter {
 
     public void ausgabeDaten() {
         System.out.printf("Name: %s%nPersNr: %s%nMonatsbruttolohn: %s%n", this.getName(), this.getPersnr(),
-                this.monatsBrutto());
+        this.monatsBrutto());
     }
 }
