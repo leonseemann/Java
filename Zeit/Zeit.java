@@ -14,14 +14,14 @@ public class Zeit {
         int minute = scanner.nextInt();
 
         if (minute > 59) {
-            stunde++;
+            stunde += minute / 60;
             this.minute = minute % 60;
         } else {
             this.minute = minute;
         }
 
         if (stunde > 23) {
-            this.stunde = 0;
+            this.stunde = stunde % 24;
         } else {
             this.stunde = stunde;
         }
