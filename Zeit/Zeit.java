@@ -8,12 +8,25 @@ public class Zeit {
     public Zeit() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Stunde: ");
-        this.stunde = scanner.nextInt();
+        int stunde = scanner.nextInt();
 
         System.out.print("Minute: ");
-        this.minute = scanner.nextInt();     
-    }
+        int minute = scanner.nextInt();
 
+        if (minute > 59) {
+            stunde++;
+            this.minute = minute % 60;
+        } else {
+            this.minute = minute;
+        }
+
+        if (stunde > 23) {
+            this.stunde = 0;
+        } else {
+            this.stunde = stunde;
+        }
+
+    }
 
     public void setStunde(int stunde) {
         this.stunde = stunde;
