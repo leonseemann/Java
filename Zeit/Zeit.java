@@ -15,8 +15,8 @@ public class Zeit {
     }
 
 
-    public void setStunde(int Stunde) {
-        this.stunde = Stunde;
+    public void setStunde(int stunde) {
+        this.stunde = stunde;
     }
 
     public void setMinute(int minute) {
