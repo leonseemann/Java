@@ -13,6 +13,7 @@ public class Zeit {
         System.out.print("Minute: ");
         int minute = scanner.nextInt();
 
+        scanner.close();
         if (minute > 59) {
             stunde += minute / 60;
             this.minute = minute % 60;
