@@ -7,22 +7,20 @@ public class Stuhl extends moebel{
         this(50);
     }
 
-    public Stuhl(int anzahl){
-        this(anzahl, 25.0);
+    public Stuhl(int anzahlAufLager){
+        this(anzahlAufLager, 25.0);
     }
 
-    public Stuhl(int anzahl, double rabattsatz){
-        this(anzahl, rabattsatz, 100.0);
+    public Stuhl(int anzahlAufLager, double rabattsatz){
+        this(anzahlAufLager, rabattsatz, 100.0);
     }
 
-    public Stuhl(int anzahl, double rabattsatz, double preis){
-        this(anzahl, rabattsatz, preis, "Stuhl");
+    public Stuhl(int anzahlAufLager, double rabattsatz, double preis){
+        this(anzahlAufLager, rabattsatz, preis, "Stuhl");
     }
 
-    public Stuhl(int anzahl, double rabattsatz, double preis, String bezeichnung) {
-        this.setAnzahlAufLager(anzahl);
-        this.setPreis(preis);
-        this.setBezeichnung(bezeichnung);
+    public Stuhl(int anzahlAufLager, double rabattsatz, double preis, String bezeichnung) {
+        super(bezeichnung, preis, anzahlAufLager);
         this.rabattsatz = rabattsatz;
     }
 

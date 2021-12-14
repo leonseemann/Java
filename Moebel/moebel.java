@@ -5,7 +5,13 @@ abstract class moebel {
     private double preis;
     private int anzahlAufLager;
 
-   public abstract double berechneRabatt(int anzahl);
+    public moebel(String bezeichnung, double preis, int anzahlAufLager){
+        this.bezeichnung = bezeichnung;
+        this.preis = preis;
+        this.anzahlAufLager = anzahlAufLager;
+    }
+
+    public abstract double berechneRabatt(int anzahl);
 
     public void setBezeichnung(String bezeichnung) {
         this.bezeichnung = bezeichnung;
