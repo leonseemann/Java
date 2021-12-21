@@ -17,12 +17,16 @@ public class Zeit {
         if (minute > 59) {
             stunde += minute / 60;
             this.minute = minute % 60;
+        } else if (minute < 0) {
+            this.minute = 0;
         } else {
             this.minute = minute;
         }
 
         if (stunde > 23) {
             this.stunde = stunde % 24;
+        } else if (stunde < 0) {
+            this.stunde = 0;
         } else {
             this.stunde = stunde;
         }
