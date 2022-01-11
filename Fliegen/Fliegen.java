@@ -1,5 +1,5 @@
 package Fliegen;
 
-public abstract class Fliegen {
-    public abstract void fliegen();
+public interface Fliegen {
+    public void fliegen();
 }
