@@ -5,6 +5,7 @@ public class StartGeneric {
         Generic test = new Generic();
 
         test.<Integer>Test(25);
-        test.<String>Test("Test");
+        test.<Character>Test('D');
+        test.<String>Test("Dounut");
     }
 }
