@@ -10,11 +10,11 @@ public class Main {
         tiere.add(new Rabbit("HaseEins"));
         tiere.add(new Rabbit("HaseZwei"));
 
-        for(Animal i : tiere){
-            if (i instanceof Fox){
+        for (Animal i : tiere) {
+            if (i instanceof Fox) {
                 ((Fox) i).hunt();
             }
-            if (i instanceof Rabbit){
+            if (i instanceof Rabbit) {
                 ((Rabbit) i).flee();
             }
         }
